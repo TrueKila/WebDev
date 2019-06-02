@@ -7,39 +7,30 @@
     <title>МТУСИ</title>
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#49337d">
             <a class="navbar-brand" href="#">МТУСИ</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="kafedri.html">Кафедры</a>
+                        <a class="nav-link" href="teachers.html">Преподователи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="department.html">Кафедры</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Преподователи
-                              </a>
+                                Temp
+                          </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
@@ -47,14 +38,36 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">Общие сведения</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <main>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h5 class="">Место нахождения образовательного учреждения.</h5>
+                    <p class="lead">Адрес МТУСИ: г. Москва, ул. Народного Ополчения, д. 32</p>
+                    <h5>Телефоны:</h5>
+                    <p>Ректорат: +7(495)957-7917</p>
+                    <p>Отдел документационного обеспечения: +7(495)957-7731</p>
+                    <h5>Эл.почта:</h5>
+                    <p>Отдел документационного обеспечения: kanc@mtuci.ru</p>
+                    <p>Ректорат: mtuci@mtuci.ru</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6"><iframe src="https://yandex.ru/map-widget/v1/-/CCvwfS-m" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe></div>
+            </div>
+        </main>
+    </div>
     <script src="assets/scripts/jquery-3.4.1.js"></script>
     <script src="assets/scripts/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
 </body>
+
+</html>

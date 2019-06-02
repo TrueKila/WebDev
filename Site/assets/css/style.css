@@ -41,11 +41,12 @@ a:hover {
     color: rgba(255, 255, 255, .5);
 }
 
+.cover-container {
+    max-width: 75em;
+}
 
-/*
 
-
-*/
+/* Xex*/
 
 .photobox {
     color: #fff;
