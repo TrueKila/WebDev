@@ -14,32 +14,35 @@
         <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#49337d">
             <a class="navbar-brand" href="#">МТУСИ</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
+                    <li id="index" class="nav-item">
+                        <a class="nav-link" href="index.html">Главная<span class="sr-only"></span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="teachers.html">Преподователи</a>
+                    <li id="teachers" class="nav-item">
+                        <a class="nav-link" href="teachers.html">Преподаватели</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="department.html">Кафедры</a>
+                    <li id="department" class="nav-item">
+                        <a class="nav-link" href="department.html">О кафедре</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Temp
-                          </a>
+                                                Общие сведения
+                                          </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="general/history.html">История кафедры</a>
+
+                            <a class="dropdown-item" href="general/studywork.html">Учебная работа кафедры</a>
+
+                            <a class="dropdown-item" href="general/work.html">Работы кафедры</a>
+
+                            <a class="dropdown-item" href="general/recommendations.html">Рекомендации преподавателям</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="info.html">Общие сведения</a>
+                    <li id="info" class="nav-item">
+                        <a class="nav-link" href="info.html">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -62,12 +65,16 @@
                         <div class="card mb-4 shadow-sm">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><image x="0" y="0" width="100%" height="225" xlink:href="assets/img/stub.png" /></svg>
                             <div class="card-body">
-                                <h2>Яшина М.В.</h2>
-                                <p class="card-text">Заведующия кафедрой доктор технических наук, доцент.</p>
+                                <h2>Шакин В.Н.</h2>
+                                <p class="card-text">Заведующий кафедрой, декан ОТФ-2, доцент, кандидат технических наук.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
+                                        <button type="button" onclick="toggle('#context-1');" class="btn btn-sm btn-outline-indigo">Подробнее</button>
                                     </div>
+                                </div>
+                                <div id="context-1">
+                                    <h5>Шакин Виктор Николаевич</h5>
+                                    <p>Научные интересы: методы моделирования, программные системы, объектно-ориентированное программирование, базы данных.</p>
                                 </div>
                             </div>
                         </div>
@@ -76,12 +83,16 @@
                         <div class="card mb-4 shadow-sm">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><image x="0" y="0" width="100%" height="225" xlink:href="assets/img/stub.png" /></svg>
                             <div class="card-body">
-                                <h2>Докучаев В.А.</h2>
-                                <p class="card-text">Заведующия кафедрой доктор технических наук, профессор.</p>
+                                <h2>Кузнецов И.П.</h2>
+                                <p class="card-text">Профессор, доктор технических наук.</p><br>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
+                                        <button type="button" onclick="toggle('#context-2');" class="btn btn-sm btn-outline-indigo">Подробнее</button>
                                     </div>
+                                </div>
+                                <div id="context-2">
+                                    <h5>Кузнецов Игорь Петрович</h5>
+                                    <p>Научные интересы: системы искусственного интеллекта, технология программирования, интеллектуальные БД.</p>
                                 </div>
                             </div>
                         </div>
@@ -90,12 +101,16 @@
                         <div class="card mb-4 shadow-sm">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><image x="0" y="0" width="100%" height="225" xlink:href="assets/img/stub.png" /></svg>
                             <div class="card-body">
-                                <h2>Шелухин О.И.</h2>
-                                <p class="card-text">Заведующия кафедрой доктор технических наук, профессор.</p>
+                                <h2>Рывлина А.А.</h2>
+                                <p class="card-text">Профессор, доктор педагогических наук.</p><br>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
+                                        <button type="button" onclick="toggle('#context-3');" class="btn btn-sm btn-outline-indigo">Подробнее</button>
                                     </div>
+                                </div>
+                                <div id="context-3">
+                                    <h5>Рывлина Александра Александровна</h5>
+                                    <p>Научные интересы в области разработки методов дистанционного обучения студентов приемам чтения и выполнения электрических схем, компьютерная графика, учебное творчество.</p>
                                 </div>
                             </div>
                         </div>
@@ -105,12 +120,16 @@
                         <div class="card mb-4 shadow-sm">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><image x="0" y="0" width="100%" height="225" xlink:href="assets/img/stub.png" /></svg>
                             <div class="card-body">
-                                <h2>Воронова Л.И.</h2>
-                                <p class="card-text">Заведующия кафедрой доктор физико-математических наук, профессор.</p>
+                                <h2>Аляпкин В.Д.</h2>
+                                <p class="card-text">Доцент, кандидат технических наук.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
+                                        <button type="button" onclick="toggle('#context-4');" class="btn btn-sm btn-outline-indigo">Подробнее</button>
                                     </div>
+                                </div>
+                                <div id="context-4">
+                                    <h5>Аляпкин Владимир Дмитриевич</h5>
+                                    <p>Научные интересы: математические методы в экономических системах.</p>
                                 </div>
                             </div>
                         </div>
@@ -119,12 +138,16 @@
                         <div class="card mb-4 shadow-sm">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><image x="0" y="0" width="100%" height="225" xlink:href="assets/img/stub.png" /></svg>
                             <div class="card-body">
-                                <h2> Яблочников С.Л.</h2>
-                                <p class="card-text">Заведующий кафедрой доктор педагогических наук, профессор.</p>
+                                <h2> Аляпкин В.В.</h2>
+                                <p class="card-text">Доцент, кандидат технических наук.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
+                                        <button type="button" onclick="toggle('#context-5');" class="btn btn-sm btn-outline-indigo">Подробнее</button>
                                     </div>
+                                </div>
+                                <div id="context-5">
+                                    <h5>Аляпкин Валерий Владимирович</h5>
+                                    <p>Научные интересы: математические методы в экономических системах.</p>
                                 </div>
                             </div>
                         </div>
@@ -133,12 +156,70 @@
                         <div class="card mb-4 shadow-sm">
                             <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><image x="0" y="0" width="100%" height="225" xlink:href="assets/img/stub.png" /></svg>
                             <div class="card-body">
-                                <h2>Андреев И.А.</h2>
-                                <p class="card-text">Кандидат экономических наук, доцент.</p><br>
+                                <h2>Гловацкая А.П.</h2>
+                                <p class="card-text">Доцент.</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
+                                        <button type="button" onclick="toggle('#context-6');" class="btn btn-sm btn-outline-indigo">Подробнее</button>
                                     </div>
+                                </div>
+                                <div id="context-6">
+                                    <h5>Гловацкая Алевтина Петровна</h5>
+                                    <p>Научные интересы: численные методы, методика преподавания вычислительной математики.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><image x="0" y="0" width="100%" height="225" xlink:href="assets/img/stub.png" /></svg>
+                            <div class="card-body">
+                                <h2> Гуриков С.Р.</h2>
+                                <p class="card-text">Доцент, кандидат педагогических наук.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" onclick="toggle('#context-7');" class="btn btn-sm btn-outline-indigo">Подробнее</button>
+                                    </div>
+                                </div>
+                                <div id="context-7">
+                                    <h5>Гуриков Сергей Ростиславович</h5>
+                                    <p>Научные интересы: теоритические вопросы информатики, технологии современного программирования.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><image x="0" y="0" width="100%" height="225" xlink:href="assets/img/stub.png" /></svg>
+                            <div class="card-body">
+                                <h2> Евстратов П.И.</h2>
+                                <p class="card-text">Старший преподаватель</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" onclick="toggle('#context-8');" class="btn btn-sm btn-outline-indigo">Подробнее</button>
+                                    </div>
+                                </div>
+                                <div id="context-8">
+                                    <h5>Евстратов Павел Иванович</h5>
+                                    <p>Научные интересы в области компьютерных технологий для разработки графической документации</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><image x="0" y="0" width="100%" height="225" xlink:href="assets/img/stub.png" /></svg>
+                            <div class="card-body">
+                                <h2> Загвоздкина А.В.</h2>
+                                <p class="card-text">Доцент.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" onclick="toggle('#context-9');" class="btn btn-sm btn-outline-indigo">Подробнее</button>
+                                    </div>
+                                </div>
+                                <div id="context-9">
+                                    <h5>Загвоздкина Анна Викторовна</h5>
+                                    <p>Научные интересы: современное программирование, численные методы.</p>
                                 </div>
                             </div>
                         </div>

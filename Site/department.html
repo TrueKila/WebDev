@@ -14,40 +14,35 @@
         <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#49337d">
             <a class="navbar-brand" href="#">МТУСИ</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
+                    <li id="index" class="nav-item">
+                        <a class="nav-link" href="index.html">Главная<span class="sr-only"></span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="teachers.html">Преподователи</a>
+                    <li id="teachers" class="nav-item">
+                        <a class="nav-link" href="teachers.html">Преподаватели</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="department.html">Кафедры</a>
+                    <li id="department" class="nav-item">
+                        <a class="nav-link" href="department.html">О кафедре</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Temp
-                          </a>
+                                        Общие сведения
+                                  </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">МКиИТ</a>
+                            <a class="dropdown-item" href="general/history.html">История кафедры</a>
 
-                            <a class="dropdown-item" href="#">МСиУС</a>
+                            <a class="dropdown-item" href="general/studywork.html">Учебная работа кафедры</a>
 
-                            <a class="dropdown-item" href="#">ИБ</a>
+                            <a class="dropdown-item" href="general/work.html">Работы кафедры</a>
 
-                            <a class="dropdown-item" href="#">ИСУиА</a>
-
-                            <a class="dropdown-item" href="#">ЭБЖиЭ</a>
-
-                            <a class="dropdown-item" href="#">КИС</a>
-
+                            <a class="dropdown-item" href="general/recommendations.html">Рекомендации преподавателям</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="info.html">Общие сведения</a>
+                    <li id="info" class="nav-item">
+                        <a class="nav-link" href="info.html">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -56,104 +51,108 @@
     <main>
         <section class="jumbotron jumbotron-fluid text-center">
             <div class="container">
-                <h1 class="jumbotron-heading">Кафедры</h1>
-                <p class="lead text-muted">Кафедры информатики МТУСИ</p>
+                <h1 class="jumbotron-heading">О Кафедре</h1>
+                <p class="lead text-muted">Информация о кафедре информатики МТУСИ</p>
             </div>
         </section>
-        <div class="album py-5 bg-light">
-            <div class="container">
+        <div class="container" style="background-color: #ffffff">
+            <ul class="tab-title text-center row">
+                <li class="col-lg-4 col-sm-4">Дисциплины кафедры</li>
+                <li class="col-lg-4 col-sm-4">Лаборатории кафедры</li>
+                <li class="col-lg-4 col-sm-4">Научная работа</li>
+            </ul>
+            <div class="tab-content">
+                <ul>
+                    <li>База данных</li>
+                    <li>Программные и аппаратные средства информатики</li>
+                    <li>Компьютерная графика</li>
+                    <li>Прикладное программное обеспечение</li>
+                    <li>ООП</li>
+                    <li>Интеллектуальные системы</li>
+                    <li>Языки программирования</li>
+                    <li>Вычислительные методы</li>
+                    <li>Информатика</li>
+                    <li>Введение в алгоритмизацию и программирование</li>
+                    <li>Компьютерная графика</li>
+                    <li>Основы реляционных баз данных</li>
+                    <li>Введение в математический пакет Matlab</li>
+                    <li>Основы моделирования вычислительных систем</li>
+                    <li>Технология языков программирования</li>
+                    <li>Математическая логика и теория алгоритмов</li>
+                    <li>Вычислительная математика</li>
+                    <li>Спецглавы информатики (ОРБД)</li>
+                    <li>Спецглавы информатики (ОАиП)</li>
+                    <li>Основы моделирования систем инфокоммуникаций</li>
+                    <li>Технологии и методы программирования</li>
+                    <li>Методы программирования</li>
+                    <li>Информационные технологии</li>
+                    <li>Численные методы</li>
+                    <li>Введение в технологию программирования</li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <p>
+                    <h5>Кафедра в настоящее время имеет:</h5>
+                </p>
+                <ul>
+                    <li>Лекционные аудитории, оборудованные компьютерной и аудиовизуальной техникой (511 и 310 ауд.), в которой проходят все лекционные занятия;</li>
 
-                <div class="row">
-                    <div class="col-md">
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-body">
-                                <h2>МКиИТ</h2>
-                                <p class="card-text">Кафедра математической кибернетики и информационных технологий.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <a href="department/MKiIT.html"><button type="button" class="btn btn-sm btn-outline-indigo" >View</button></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card mb-4 shadow-sm">
+                    <li>4 компьютерных классы ПК, классы полностью оснащены новой техникой (531, 538, 540, 223 ауд.);</li>
 
-                            <div class="card-body">
-                                <h2>МСиУС</h2>
-                                <p class="card-text">Кафедра мультимедийных сетей и услуг связи.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card mb-4 shadow-sm">
+                    <li> 2 специализированных лаборатории по инженерной графики;</li>
 
-                            <div class="card-body">
-                                <h2>ИБ</h2>
-                                <p class="card-text">Кафедра информационной безопасности.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card mb-4 shadow-sm">
+                    <li> Локальная сеть кафедры, которая имеет выход на корпоративную сеть университета.</li>
+                </ul>
 
-                            <div class="card-body">
-                                <h2>ИСУиА</h2>
-                                <p class="card-text">Кафедра интеллектуальных систем в управлении и автоматизации.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card mb-4 shadow-sm">
+                <p>
+                    <h5>Кафедра в перспективе планирует:</h5>
+                </p>
+                <ul>
+                    <li>обеспечить проведение промежуточного тестирования в классах.</li>
+                </ul>
 
-                            <div class="card-body">
-                                <h2>ЭБЖиЭ</h2>
-                                <p class="card-text">Кафедра экологии, безопасности жизнедеятельности и электропитания.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card mb-4 shadow-sm">
+                <p>
+                    <h5>В компьютерных классах на всех ПК имеется следующее программное обеспечение:</h5>
+                </p>
+                <ul>
+                    <li>Windows 7;</li>
 
-                            <div class="card-body">
-                                <h2>КИС</h2>
-                                <p class="card-text">Кафедра корпоративные информационные системы.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-indigo">View</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <li>MS Visual Studio .NET 2008; MS Visual Studio .NET 2010;</li>
+                    <li> MS Visio 2010, MS Access 2010, MS Access 2010;</li>
+
+                    <li>Методические материалы: электронные учебные пособия, практикумы изадачники;</li>
+
+                    <li>базы тестовых заданий для текущего, промежуточного оценивания знаний студентов;</li>
+
+                    <li> и др.</li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <p>Преподаватели кафедры являются опытными педагогами и высококвалифицированными специалистами в различных областях современного программирования, компьютерных технологий, вычислительной математики и компьютерной графики </p>
+
+                <p>Одно из предложения кафедры на проведение НИР по научному направлению кафедры это: "Разработка и применение технологии дифференцированного извлечения информации на основе смысловой индексации текстовых ресурсов локальных, корпоративных
+                    и глобальных сетей" IT-Miner.</p>
+
+                <p>Здесь решаются следующие задачи: Построение любой система, связанной с применением технологии IT-miner включает прежде всего разработку двух основных компонент.</p>
+
+                <p>Первая - система сбора , осуществляющая с помощью типовых средств нахождение соответствующих запросу информационных ресурсов и выделение из них ограниченных фрагментов текстового материала с заданным объемом и достаточно высокой плотностью
+                    вхождения ключевых слов.</p>
+
+                <p>Вторая компонента - интеллектуальная система, на вход которой поступают выделенные параграфы. Соответствующие тексты проходят все виды лингвистического анализа: лексический, морфологический и синтактико-семантический. В результате текст
+                    автоматически формализуется. Из него выделяются необходимые информационные объекты: лица, организации, объекты научной, образовательной или производственной или деятельности, даты, места расположения объектов, адреса и т.д., а также
+                    их свойства и связи, которые описаны в тексте с помощью глагольных форм или в виде анафорических ссылок. Все это представляется в виде структур (расширенных семантических сетей) и запоминается в базе знаний. На ее основе осуществляется
+                    дифференцированный отбор интересующих пользователя объектов с последующим автоматизированным проведением информационного анализа для подготовки и принятия решений в любой предметной области.</p>
+
+                <p>Другие направления научных исследований кафедры связаны: с исследованиями и разработкой методов рациональной организации и прогнозирования информационных ресурсов в научно-образовательной сфере; с распределенными системами дистанционного
+                    обучения; использованию средств компьютерной графики при проектировании РЭА; с разработкой обучающих технологий в области графических дисциплин при дистанционной форме.</p>
             </div>
         </div>
+
     </main>
     <script src="assets/scripts/jquery-3.4.1.js"></script>
     <script src="assets/scripts/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="assets/scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>

@@ -46,6 +46,45 @@ a:hover {
 }
 
 
+/* Hhhhuu*/
+
+.tab-title {
+    list-style: none;
+}
+
+.tab-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    border-bottom: 2px solid #ccc;
+}
+
+.tab-title li {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.tab-title li:hover {
+    box-shadow: 0 -5px 0px -2px #ccc;
+}
+
+.tab-title li.active {
+    color: rgb(0, 0, 0);
+    box-shadow: 0 5px 0px -1px #49337d;
+}
+
+.tab-content {
+    display: none;
+    padding: 5px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+
+
 /* Xex*/
 
 .photobox {
