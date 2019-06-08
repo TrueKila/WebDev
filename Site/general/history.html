@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>МТУСИ</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
@@ -14,50 +14,76 @@
         <nav class="navbar navbar-expand-md navbar-dark" style="background-color:#49337d">
             <a class="navbar-brand" href="#">МТУСИ</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
+                    <li id="index" class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная<span class="sr-only"></span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="teachers.html">Преподователи</a>
+                    <li id="teachers" class="nav-item">
+                        <a class="nav-link" href="../teachers.html">Преподаватели</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="department.html">Кафедры</a>
+                    <li id="department" class="nav-item">
+                        <a class="nav-link" href="../department.html">О кафедре</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Temp
-                          </a>
+                                                Общие сведения
+                                          </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">МКиИТ</a>
+                            <a class="dropdown-item" href="history.html">История кафедры</a>
 
-                            <a class="dropdown-item" href="#">МСиУС</a>
+                            <a class="dropdown-item" href="studywork.html">Учебная работа кафедры</a>
 
-                            <a class="dropdown-item" href="#">ИБ</a>
+                            <a class="dropdown-item" href="work.html">Работы кафедры</a>
 
-                            <a class="dropdown-item" href="#">ИСУиА</a>
-
-                            <a class="dropdown-item" href="#">ЭБЖиЭ</a>
-
-                            <a class="dropdown-item" href="#">КИС</a>
-
+                            <a class="dropdown-item" href="recommendations.html">Рекомендации преподавателям</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="info.html">Общие сведения</a>
+                    <li id="info" class="nav-item">
+                        <a class="nav-link" href="../info.html">Контакты</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+    <main>
+        <section class="jumbotron jumbotron-fluid text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">История кафедры информатики МТУСИ</h1>
+            </div>
+        </section>
+        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <p>Кафедра ИНФОРМАТИКИ образовалась в сентябре 2012 году слиянием двух кафедр: кафедры Вычислительной математики и программирования и кафедры Инженерной и компьютерной графики.</p>
 
+                    <p>Кафедра Вычислительной математики и программирования основана в декабре1973 года в Московском электротехническом институте связи.</p>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                    <p>Основатель кафедры Вычислительной математики и программирования и первый заведующий кафедрой - академик Международной Академии Информатизации д.т.н. профессор Сергей Дмитриевич Пашкеев. В 1988 – 1991г.г. кафедрой заведовал д.т.н.,
+                        профессор Дегтярев Юрий Иванович, в 1991 - 1994 г. – к.т.н., доц. Шакин Виктор Николаевич, в 1994 – 2002 г.г. заведующий кафедрой - д.т.н. профессор Гармаш Владимир Николаевич, а с 2002 г. по настоящее время заведующим объединенной
+                        кафедрой Информатики является к.т.н., доц. Шакин Виктор Николаевич.</p>
+
+                    <p>Кафедра осуществляла фундаментальную базовую подготовку студентов для всех специальностей 1 и 2-го курсов дневной и заочной (включая дистанционную) форм обучения (включая дистанционное обучение), а также специализированную углубленную
+                        подготовку студентов и магистров по специальностям: 220100 «Вычислительные машины, системы и сети», 220400 «Программное обеспечение вычислительной техники и управляющих систем», 071900 «Информационные системы в технике и технологиях»,
+                        210200 «Прикладная математика». Со дня основания кафедры преподаватели участвуют в работе факультета повышения квалификации преподавателей, совершенствуя знания преподавателей в области современных компьютерных технологий.</p>
+
+                    <p>Кафедра Инженерной и компьютерной графики (кафедра Начертательной геометрии и черчения 1931-1965 год, кафедра Инженерной графики 1965-2000 год) организована в 1931 году. Первым заведующим кафедрой был Вальцгефер В. Л. В 1935-1936 учебном
+                        году заведующим кафедрой назначается Рудаев А. К.. В 1936 году для заведования кафедрой приглашается профессор Четверухин Н.Ф.. В годы Великой Отечественной войны кафедрой руководили Рудаев А. К. и Четверухин Н. Ф. В 1947 году
+                        заведующим кафедрой был назначен доцент Юровский И. С., который руководил кафедрой до 1965 года. В конце 1965 года руководство кафедрой принял доцент Чувиков Н. Т.. С 1976 по 1986 год обязанности заведующего кафедрой исполнял ст.
+                        преп. Кузнецов Л. Н. С 1986 по 2001 года кафедрой руководил доцент, к.т.н. А. М. Тенякшев. С 2001 по сентябрь 2012 года заведовал кафедрой профессор, д.т.н. Артамонов Евгений Иванович.</p>
+
+                    <p>Основное внимание кафедра уделяла базовой графической подготовке с учетом специфики специальностей университета связи. С середины 60-х годов в программу включено выполнение электрических схем. С 1988 года введено преподавание основ
+                        компьютерной графики, а с 1994 года начато внедрение в учебный процесс САПР PCAD и AutoCAD. </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../assets/scripts/jquery-3.4.1.js"></script>
+    <script src="../assets/scripts/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/scripts/script.js"></script>
 </body>
 
 </html>
