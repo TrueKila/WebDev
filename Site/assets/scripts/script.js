@@ -27,10 +27,10 @@ function tab() {
     $('.tab-title li').not('.active').click(function() {
         var index = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
-        $('.tab-content').css('display', 'none').eq(index).css('display', 'block');
+        $('.tab-content-li').css('display', 'none').eq(index).css('display', 'block');
     })
 
     $('.tab-title li:first').addClass('active');
-    $('.tab-content:first').css('display', 'block');
+    $('.tab-content-li:first').css('display', 'block');
 
 }

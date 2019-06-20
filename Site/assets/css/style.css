@@ -45,6 +45,40 @@ a:hover {
     max-width: 75em;
 }
 
+.bt-margin {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+/*border li*/
+
+.static-border a {
+    list-style: none;
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, .1), -2px -2px 5px 0 rgba(0, 0, 0, .1), 2px 2px 5px 0 rgba(0, 0, 0, .1), -2px 2px 5px 0 rgba(0, 0, 0, .1);
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: 0.3s all linear;
+    max-width: 50em;
+}
+
+.border {
+    list-style: none;
+    padding: 0;
+}
+
+.border a {
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, .1), -2px -2px 5px 0 rgba(0, 0, 0, .1), 2px 2px 5px 0 rgba(0, 0, 0, .1), -2px 2px 5px 0 rgba(0, 0, 0, .1);
+    max-width: 50em;
+    color: #333;
+}
+
 
 /* Hhhhuu*/
 
@@ -77,7 +111,7 @@ a:hover {
     box-shadow: 0 5px 0px -1px #49337d;
 }
 
-.tab-content {
+.tab-content-li {
     display: none;
     padding: 5px;
     margin: 10px;
@@ -160,3 +194,5 @@ a:hover {
     -webkit-transition-delay: calc(var(--photoboxAnimationDuration, .8s) / 4);
     transition-delay: calc(var(--photoboxAnimationDuration, .8s) / 4);
 }
+
+z
